@@ -1,1 +1,1 @@
-low level programming in C
+this directory contains commands and codes in c
