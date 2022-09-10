@@ -1,37 +1,32 @@
 #include <stdio.h>
 /**
-* main-progrtam entry point
-*
-* Return:0 success, non zero fail
-*/
+ * main - entry point
+ *
+ * Return: 0 if successfull
+ */
 int main(void)
 {
-	int m, i, j;
+	int one;
+	int ten;
+	int hundred;
 
-	for (i = '0'; i <= '9'; i++)
+	for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
 		{
-			for (m = '0'; m <= '9'; m++)
+			for (one = (ten + 1); one <= '9'; one++) /*ones*/
 			{
-				if (i < j && j < m)
+				putchar(hundred);
+				putchar(ten);
+				putchar(one);
+				if (hundred != '7' || ten != '8' || one != '9')
 				{
-					putchar(i);
-					putchar(j);
-					putchar(m);
-					if (i == '7' && j == '8' && m == '9')
-					{
-						break;
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar ('\n')
-		return (0);
+	putchar('\n');
+	return (0);
 }
