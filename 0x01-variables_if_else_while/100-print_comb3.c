@@ -1,37 +1,26 @@
 #include <stdio.h>
 /**
- * main - program entry point
+ * main - print 80 to 9 with no duplicate digits or combos: no 11, no 16 (61)
  *
- * Retrun: 0 success, non zero fail
+ * Return: 0 if successful
  */
 int main(void)
 {
-	int i, k ='0', j;
+	int ones;
+	int tens;
 
-	for (i = '0'; i <='9'; i++)
+	for (tens = '0'; tens <= '9'; tens++) /*increment tens*/
 	{
-		for (j = k; j <= '9'; j++)
+		for (ones = (tens + 1); ones <= '9'; ones++) /*one’s ten+1l*/
 		{
-			if (i != j)
-			{
-				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
-			{
-				continue;
-			}
-			if (i == '8' && j = '9')
-			{
-				break;
-			}
-			else
+			putchar (tens);
+			putchar (ones);
+			if (tens != '8' || ones != '9') /*print commas*/
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		k++;
 	}
 	putchar('\n');
 	return (0);
