@@ -1,10 +1,11 @@
-#include <stdio.h>
 #include <stdlib.h>
-#inclide <time.h>
+#include <time.h>
+#include <stdio.h>
+/* betty style doc for function main goes there */
 /**
- * main - program entry point
+ * main - Entry point
  *
- * Return: Success (0) no error
+ * Return: 0 if successful
  */
 int main(void)
 {
@@ -16,11 +17,13 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n < 0)
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
 	{
 		printf("%d is negative\n", n);
 	}
-	else if (n == 0)
-		printf("%d is zero\n", n);
 	return (0);
 }
