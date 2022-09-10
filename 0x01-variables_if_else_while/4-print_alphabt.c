@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main-program entry point.
  *
@@ -7,14 +6,20 @@
  */
 int main(void)
 {
-	char i;
+	char alphabet;
+	int count = 97;
 
-	for (i = 'a'; i <= 'z'; i++)
+	while (count < 123)
 	{
-		if (i == 'e' || i == 'q')
+		alphabet = count;
+		putchar(alphabet);
+		count++;
+		if (count == 101 || count == 113)
+		{
+			count++;
 			continue;
-		putchar(i);
+		}
 	}
-	putchar('\n');
-	reurn (0);
+	putchar(10);
+	return (0);
 }
