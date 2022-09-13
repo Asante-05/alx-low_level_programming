@@ -8,7 +8,7 @@
  */
 int _abs(int a)
 {
-	int k =q;
+	int k = a;
 	int absvalue;
 
 	if(k < 0)
