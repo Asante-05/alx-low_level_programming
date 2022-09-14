@@ -15,5 +15,5 @@ int main(void)
 			b += a;
 	}
 	printf("%d\n", b);
-	reurn (0);
+	return (0);
 }
