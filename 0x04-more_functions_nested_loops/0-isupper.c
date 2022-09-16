@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * _isupper - Checks for capital of characters
  * @c: input character
+ *
  * Return: (0) if succesful
  */
 int _isupper(int c)

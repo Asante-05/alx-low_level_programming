@@ -3,7 +3,7 @@
 /**
  * main - Program Entry
  *
- * Return: (0) Always
+ * Return: 0 if Successfull
  */
 int main(void)
 {
@@ -11,7 +11,6 @@ int main(void)
 
 	i = 1;
 	printf("%d", i);
-	printf(" ");
 	for (i = 2; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
