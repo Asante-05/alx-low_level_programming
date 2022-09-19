@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * rev_string - reverses a string.
- * @s: input string.
- * Return: no return.
- */
+ *  * rev_string - reverses a string.
+ *   * @s: input string.
+ *    * Return: no return.
+ *     */
 void rev_string(char *s)
 {
 	int count = 0, i, j;
@@ -13,6 +13,7 @@ void rev_string(char *s)
 	{
 		if (s[count] == '\0')
 			break;
+		count++;
 	}
 	str = s;
 
