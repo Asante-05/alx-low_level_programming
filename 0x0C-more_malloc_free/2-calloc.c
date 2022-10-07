@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * _calloc - allocates memory for an array.
  * @nmemb: number of elements.
@@ -7,29 +7,25 @@
  *
  * Return: pointer to the allocated memory.
  * if nmemb or size is 0, returns NULL.
- * if malloc fails, retrns NULL
+ * if malloc fails, returns NULL.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *p;
 	unsigned int i;
-	char *ptr;
 
 	if (nmemb == 0 || size == 0)
-	{
 		return (NULL);
-	}
 
-	ptr = malloc(nmemb * size);
+	p = malloc(nmemb * size);
 
-	if (ptr == NULL)
-	{
-		free(ptr);
+	if (p == NULL)
 		return (NULL);
-	}
+
 	for (i = 0; i < (nmemb * size); i++)
-	{
-		ptr[i] = 0;
-	}
+		p[i] = 0;
 
-	return (ptr);
+	return (p);
 }
+
+
