@@ -1,5 +1,9 @@
 #include "3-calc.h"
-
+/**
+ * get_op_func - this function maps an operand to it right function
+ * @s: char operator
+ * Return: pointer to operator corresponing to operator
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -12,7 +16,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 0)
+	while (i < 10)
 	{
 		if (s[0] == ops->op[i])
 		{
