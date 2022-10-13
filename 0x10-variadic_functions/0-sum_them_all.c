@@ -11,11 +11,10 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 	unsigned int i;
 
-
-	va_start(dnc_list, n);
-
 	if (n == 0)
 		return (0);
+
+	va_start(dnc_list, n);
 
 	for (i = 0; i < n; i++)
 		sum = sum + va_arg(dnc_list, int);
