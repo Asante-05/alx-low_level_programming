@@ -8,6 +8,6 @@
 int main(void)
 {
 	print_strings(", ", 2, "Jay", "Django");
-	print_strings("% ", 6, "Kelvin", "Asants", "is", "the", "talented", "one.");
+	print_strings(", ", 6, "Kelvin", "","\"" , "the", "talented", "one.");
 	return (0);
 }
