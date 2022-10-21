@@ -16,11 +16,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
+
+	new_node->str = strdup(str);
+
 	for (length = 0; str[length] != '\0'; length++)
 	{
 		;
 	}
-	new_node->str = strdup(str);
 	new_node->len = length;
 	new_node->next = NULL;
 	temp = *head;
@@ -36,5 +38,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		}
 		temp->next = new_node;
 	}
-	return (new_node);
+	return (*head);
 }
