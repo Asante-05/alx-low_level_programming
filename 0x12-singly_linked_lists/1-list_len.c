@@ -6,13 +6,13 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nodeNum = 0;
-	const list_t *tmp;
+	size_t nodeNum;
 
-	tmp = h;
-	while (tmp != NULL)
+	nodeNum = 0;
+
+	while (h != NULL)
 	{
-		tmp = tmp->next;
+		h = h->next;
 		nodeNum++;
 	}
 	return (nodeNum);
