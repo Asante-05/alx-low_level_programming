@@ -20,8 +20,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		}
 	}
 
-	if (curr == NULL && index != 0)
+	if (curr == NULL || (curr->next == NULL && index != 0))
+	{
 		return (-1);
+	}
 
 	next = curr->next;
 
