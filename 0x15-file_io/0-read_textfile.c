@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	rbytes = read(fd, buf, letters);
-	bytesr= write(STDOUT_FILENO, buf, rbytes);
+	bytesr = write(STDOUT_FILENO, buf, rbytes);
 	close(fd);
 	free(buf);
 
