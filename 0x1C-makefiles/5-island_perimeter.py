@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module contains functions that calculate the perimeter of the island"""
 
+
 def land_is_here(grid, i, j, grid_length, inner_length):
     """_summary_
     Args:
@@ -28,6 +29,7 @@ def land_is_here(grid, i, j, grid_length, inner_length):
         perimeter_of_cell += 1
     return perimeter_of_cell
 
+
 def island_perimeter(grid):
     """_summary_
     Args:
@@ -35,6 +37,7 @@ def island_perimeter(grid):
     Returns:
         int: Returns the perimeter of the island
     """
+
     perimeter = 0
     grid_length = len(grid)
     for i in range(0, grid_length):
